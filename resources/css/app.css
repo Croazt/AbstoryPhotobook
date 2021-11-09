@@ -2,3 +2,16 @@
 @import "~tailwindcss/components.css";
 @import "~tailwindcss/utilities.css";
 
+.textarea{
+    @apply  px-2 py-1  h-16 placeholder-gray-400 text-gray-600 relative bg-white  rounded text-sm border border-gray-400 outline-none focus:outline-none focus:ring w-full
+}
+.textarea-2{
+    @apply  px-2 py-1 mb-4 h-16 placeholder-gray-400 text-gray-600 relative bg-white  rounded text-sm border border-gray-400 outline-none focus:outline-none focus:ring w-9/20
+}
+.textarea-col{
+    @apply flex-col h-16 mb-4 md:w-full sm:w-128  w-96
+}
+
+.big-button{
+    @apply h-16 rounded bg-utama text-white outline-none sm:w-64 w-52 text-lg font-bold
+}

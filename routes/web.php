@@ -14,6 +14,9 @@ use App\Http\Controllers\DependentDropdownController;
 */
 
 
+Route::get('login',function(){
+    return(view('auth/login'));
+});
 Route::get('register', 'App\Http\Controllers\DependentDropdownController@regist_drop');
 
 Route::get('dependent-dropdown', 'App\Http\Controllers\DependentDropdownController@index')

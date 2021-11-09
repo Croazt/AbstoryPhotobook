@@ -1,3 +1,9 @@
+<html lang="en">
+
+@include('template')
+
+<body>
+    @include('include/header')
 <div class="z-0 flex flex-col items-center text-utama h-wrap pt-24 pb-24">
     <div class="w-full mb-20">
         <p class="text-center font-bold text-7xl">Login</p>
@@ -16,10 +22,15 @@
                     <p class="mb-4 text-left">Forgot your password? <a href="">Click Here</a></p>
             </div>
                 <button type="submit"
-                    class="h-16 mb-4 mt-6 rounded bg-utama text-white text-lg font-bold outline-none f w-64">Login</button>
+                    class="big-button mb-4 mt-6">Login</button>
                     <p>Don’t have an Account? Create account</p>
             </center>
 
         </form>
     </div>
 </div>
+@include('include/footer')
+</body>
+
+</html>
+

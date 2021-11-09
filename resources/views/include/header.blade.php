@@ -1,5 +1,5 @@
     <nav class="bg-white">
-        <div class="border-nav h-6 bg-utama w-full"></div>
+        <div class="border-nav h-6 bg-utama w-full sm:block hidden"></div>
         <div class="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
             <div class="relative flex items-center justify-between h-24">
                 <div class="absolute inset-y-0 left-0 flex items-center sm:hidden" id="burger">
