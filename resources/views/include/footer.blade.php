@@ -56,6 +56,8 @@
         </div>
     </div>
 </footer>
+
+<script src="{{ asset('js/app.js') }}"></script>
 <script>
     window.addEventListener('DOMContentLoaded', function() {
         $('#profile').on('click', function(e) {
@@ -71,3 +73,5 @@
     })
 </script>
 
+</body>
+</html>
