@@ -22,7 +22,7 @@ class DependentDropdownController extends Controller
     {
         $provinces = Province::pluck('name', 'code');
 
-        return view('template', [
+        return view('auth/register', [
             'provinces' => $provinces,
         ]);
     }

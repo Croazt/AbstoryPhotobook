@@ -13,9 +13,6 @@ use App\Http\Controllers\DependentDropdownController;
 |
 */
 
-Route::get('/', function () {
-    return view('template');
-});
 
 Route::get('register', 'App\Http\Controllers\DependentDropdownController@regist_drop');
 

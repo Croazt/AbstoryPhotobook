@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-@include('template')
-
-<body>
     <nav class="bg-white">
         <div class="border-nav h-6 bg-utama w-full"></div>
         <div class="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -75,7 +70,7 @@
                 <!-- Small -->
                 <div class="md:block relative hidden flex h-6 w-36 p-none m-none flex-end ">
                     <input type="text" placeholder="Search"
-                        class=" px-2 py-1 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded-l text-sm border border-gray-400 outline-none focus:outline-none focus:ring w-24 " />
+                        class=" px-2 py-1 placeholder-gray-400 text-gray-600 relative bg-white rounded-l text-sm border border-gray-400 outline-none focus:outline-none focus:ring w-24 " />
                     <button class="w-7 h-7 rounded-r bg-utama m-none"> <i class="fas fa-search text-white"></i></button>
                 </div>
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-1 sm:pr-0">
