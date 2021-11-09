@@ -1,4 +1,4 @@
-<footer class="footer bg-white relative pt-1 border-b-2 border-white bg-utama">
+<footer class="footer  relative pt-1 border-b-2 border-white bg-utama">
     <div class="container mx-auto px-6 ">
 
         <div class="sm:flex sm:mt-8">
