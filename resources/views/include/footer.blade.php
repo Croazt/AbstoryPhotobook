@@ -56,6 +56,18 @@
         </div>
     </div>
 </footer>
-</body>
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        $('#profile').on('click', function(e) {
+            $('#profile-menu').toggleClass("hidden"); //you can list several class names 
+            e.preventDefault();
+        });
 
-</html>
+
+        $('#burger').on('click', function(e) {
+            $('#mobile-menu').toggleClass("hidden"); //you can list several class names 
+            e.preventDefault();
+        });
+    })
+</script>
+
