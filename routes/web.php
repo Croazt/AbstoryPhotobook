@@ -28,6 +28,13 @@ Route::post('dependent-dropdown', 'App\Http\Controllers\DependentDropdownControl
 Route::post('dependent-dropdown-city', 'App\Http\Controllers\DependentDropdownController@store_city')
     ->name('dependent-dropdown.store_city');
 
-    
 Route::post('dependent-dropdown-district', 'App\Http\Controllers\DependentDropdownController@store_district')
 ->name('dependent-dropdown.store_district');
+
+Route::get('',function(){
+    return(view('user/index'));
+});
+
+Route::get('',function(){
+    return(view('user/index'));
+});
