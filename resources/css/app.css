@@ -35,20 +35,37 @@
 }
 
 /* WHATS ABSTORY OFFER */
-.box-format{
+.box-format-wao{
     @apply w-full bg-white rounded-lg shadow-lg p-12 flex flex-col justify-center items-center
 }
 
-.image-format{
+.image-format-wao{
     @apply object-center object-cover
 }
 
-.text-xl{
+.text-xl-wao{
     @apply text-gray-800 font-semibold mb-2
 }
 
-.text-base{
+.text-base-wao{
     @apply text-gray-700 font-normal
+}
+
+/* What They Says */
+.box-format-wts{
+    @apply w-full bg-white rounded-lg shadow-lg p-2 flex flex-col justify-center items-center
+}
+
+.image-format-wts{
+    @apply object-center object-cover rounded-full h-36 w-36
+}
+
+.text-xl-wts{
+    @apply text-gray-800 font-semibold mb-2
+}
+
+.text-base-wts{
+    @apply text-gray-700 font-normal text-left
 }
 
 

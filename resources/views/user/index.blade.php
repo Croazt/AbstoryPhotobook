@@ -150,36 +150,36 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 tab-all-product">
-                <div class="box-format">
+                <div class="box-format-wao">
                     <div class="mb-4">
-                        <img class="image-format" src="{{asset('images/icons/quality.png')}}" alt="photo">
+                        <img class="image-format-wao" src="{{asset('images/icons/quality.png')}}" alt="photo">
                     </div>
                     <div class="text-center">
-                        <p class="text-xl">Premium Quality</p>
+                        <p class="text-xl-wao">Premium Quality</p>
                     </div>
                 </div>
-                <div class="box-format">
+                <div class="box-format-wao">
                     <div class="mb-4">
-                        <img class="image-format" src="{{asset('images/icons/time.png')}}" alt="photo">
+                        <img class="image-format-wao" src="{{asset('images/icons/time.png')}}" alt="photo">
                     </div>
                     <div class="text-center">
-                        <p class="text-xl">Quickly Done</p>
+                        <p class="text-xl-wao">Quickly Done</p>
                     </div>
                 </div>
-                <div class="box-format">
+                <div class="box-format-wao">
                     <div class="mb-4">
-                        <img class="image-format" src="{{asset('images/icons/like.png')}}" alt="photo">
+                        <img class="image-format-wao" src="{{asset('images/icons/like.png')}}" alt="photo">
                     </div>
                     <div class="text-center">
-                        <p class="text-xl">Beautiful Design</p>
+                        <p class="text-xl-wao">Beautiful Design</p>
                     </div>
                 </div>
-                <div class="box-format">
+                <div class="box-format-wao">
                     <div class="mb-4">
-                        <img class="image-format" src="{{asset('images/icons/shipped.png')}}" alt="photo">
+                        <img class="image-format-wao" src="{{asset('images/icons/shipped.png')}}" alt="photo">
                     </div>
                     <div class="text-center">
-                        <p class="text-xl">Shipping Cost Subsidized</p>
+                        <p class="text-xl-wao">Shipping Cost Subsidized</p>
                     </div>
                 </div>
                 
@@ -234,6 +234,82 @@
 
         </section>
 
+        <!-- What they Says -->
+        <section class=" mx-auto px-4 sm:px-6 lg:px-6 py-12">
+            <div class="text-center pb-12">
+                <h1 class="sec-title">
+                    What They Says        
+                </h1>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-6 tab-all-product">
+                <div class="box-format-wts">
+                    <div class="m-4">
+                        <img class="image-format-wts" src="{{asset('images/profile/adzana.jpg')}}" alt="photo">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xl-wts">Adzana Shaliha</p>
+                        <p class="text-xl-wts">1 Januari 2021</p>
+                        <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quisquam eaque voluptatem explicabo repellat modi id cupiditate illo minima? Minima fugit velit tempora sint veniam iure, doloribus reiciendis officiis quod?</p>
+                    </div>
+                </div>
+                <div class="box-format-wts">
+                    <div class="m-4">
+                        <img class="image-format-wts" src="{{asset('images/profile/angelina.jpg')}}" alt="photo">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xl-wts">Angelina Christy</p>
+                        <p class="text-xl-wts">1 Januari 2021</p>
+                        <p class="text-base-wts">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores odio aperiam officia, exercitationem libero soluta, illo quisquam expedita quibusdam amet sed maiores molestias veritatis tempore dignissimos! Ipsum aperiam dolor possimus.</p>
+                    </div>
+                </div>
+                <div class="box-format-wts">
+                    <div class="m-4">
+                        <img class="image-format-wts" src="{{asset('images/profile/aninditha.jpg')}}" alt="photo">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xl-wts">Aninditha Rahma Cahyadi</p>
+                        <p class="text-xl-wts">1 Januari 2021</p>
+                        <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, doloribus quasi distinctio voluptatum nesciunt dolorum omnis est maiores esse, at facere cupiditate veniam, aliquid blanditiis modi nemo. Impedit, repellat iure.</p>
+                    </div>
+                </div>
+                <div class="box-format-wts">
+                    <div class="m-4">
+                        <img class="image-format-wts" src="{{asset('images/profile/ariella.jpg')}}" alt="photo">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xl-wts">Ariella Calista Ichwan</p>
+                        <p class="text-xl-wts">1 Januari 2021</p>
+                        <p class="text-base-wts">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora iusto odio voluptates natus maiores id nam, beatae quo, officiis ipsam praesentium quod numquam repudiandae non molestias consequatur eos quas itaque!</p>
+                    </div>
+                </div>
+                <div class="box-format-wts">
+                    <div class="m-4">
+                        <img class="image-format-wts" src="{{asset('images/profile/azizi.jpg')}}" alt="photo">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xl-wts">Azizi Asadel</p>
+                        <p class="text-xl-wts">1 Januari 2021</p>
+                        <p class="text-base-wts flex">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ad nesciunt? Ratione molestias ex culpa! Beatae, non facilis id harum consectetur officiis eius blanditiis voluptatibus repellendus distinctio atque odio minima!</p>
+                    </div>
+                </div>
+                <div class="box-format-wts">
+                    <div class="m-4">
+                        <img class="image-format-wts" src="{{asset('images/profile/cindy.jpg')}}" alt="photo">
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xl-wts">Cindy Hapsari Maharani</p>
+                        <p class="text-xl-wts">1 Januari 2021</p>
+                        <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fuga corporis aliquam a accusamus optio, quidem ullam. Porro animi nemo doloremque, nulla sint veritatis libero ex vel assumenda qui atque.</p>
+                    </div>
+                </div> 
+            </div>
+
+        </section>
+
+        <section>
+
+        </section>
         
 
     @include('include/footer')
