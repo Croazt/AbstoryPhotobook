@@ -5,9 +5,11 @@
 .textarea{
     @apply  px-2 py-1  h-16 placeholder-gray-400 text-gray-600 relative bg-white  rounded text-sm border border-gray-400 outline-none focus:outline-none focus:ring w-full
 }
+
 .textarea-2{
     @apply  px-2 py-1 mb-4 h-16 placeholder-gray-400 text-gray-600 relative bg-white  rounded text-sm border border-gray-400 outline-none focus:outline-none focus:ring w-9/20
 }
+
 .textarea-col{
     @apply flex-col h-16 mb-4 md:w-full sm:w-128  w-96
 }
@@ -15,3 +17,56 @@
 .big-button{
     @apply h-16 rounded bg-utama text-white outline-none sm:w-64 w-52 text-lg font-bold
 }
+
+.sec-title{
+    @apply font-semibold text-3xl md:text-4xl lg:text-5xl text-black
+}
+
+/* OUR PRODUCT */
+.image-format-op{
+    @apply object-center rounded-lg object-cover 
+}
+
+.text-base-op{
+    @apply text-gray-700 font-normal
+}
+.text-xl-op{
+    @apply text-gray-800 font-semibold mb-2
+}
+
+/* WHATS ABSTORY OFFER */
+.box-format-wao{
+    @apply w-full bg-white rounded-lg shadow-lg p-12 flex flex-col justify-center items-center
+}
+
+.image-format-wao{
+    @apply object-center object-cover
+}
+
+.text-xl-wao{
+    @apply text-gray-800 font-semibold mb-2
+}
+
+.text-base-wao{
+    @apply text-gray-700 font-normal
+}
+
+/* What They Says */
+.box-format-wts{
+    @apply w-full bg-white rounded-lg shadow-lg p-2 flex flex-col justify-center items-center
+}
+
+.image-format-wts{
+    @apply object-center object-cover rounded-full h-36 w-36
+}
+
+.text-xl-wts{
+    @apply text-gray-800 font-semibold mb-2
+}
+
+.text-base-wts{
+    @apply text-gray-700 font-normal text-left
+}
+
+
+
