@@ -307,8 +307,16 @@
 
         </section>
 
-        <section>
-
+        <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-6 py-12">
+            <div class="box-format-wts">
+                <div class="text-center p-12">
+                    <a href="">
+                        <h1 class="sec-title">
+                        More Information? Click Here!       
+                        </h1>
+                    </a>
+                </div>
+            </div>
         </section>
         
 
