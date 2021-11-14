@@ -14,11 +14,9 @@ use App\Http\Controllers\DependentDropdownController;
 */
 
 
-Route::get('login',function(){
-    return(view('auth/login'));
+Route::get('login', function () {
+    return (view('auth/login'));
 });
-Route::get('register', 'App\Http\Controllers\DependentDropdownController@regist_drop');
-
 Route::get('dependent-dropdown', 'App\Http\Controllers\DependentDropdownController@index')
     ->name('dependent-dropdown.index');
 
@@ -29,12 +27,16 @@ Route::post('dependent-dropdown-city', 'App\Http\Controllers\DependentDropdownCo
     ->name('dependent-dropdown.store_city');
 
 Route::post('dependent-dropdown-district', 'App\Http\Controllers\DependentDropdownController@store_district')
-->name('dependent-dropdown.store_district');
+    ->name('dependent-dropdown.store_district');
 
-Route::get('',function(){
-    return(view('user/index'));
-});
 
-Route::get('',function(){
-    return(view('user/index'));
-});
+Auth::routes();
+
+Route::get('', function () {
+    return (view('user/index'));
+})->middleware('auth');
+
+Route::get('register', 'App\Http\Controllers\DependentDropdownController@regist_drop')->name('register');
+
+
+Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
