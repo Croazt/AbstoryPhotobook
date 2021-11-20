@@ -1,68 +1,32 @@
 @extends('template')
 @section('content')
 
-    <!--<link href="{{ asset('css/carousal.css') }}" rel="stylesheet" type="text/css">
-
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-                    <div class="carousel-item">
-                        <img src="{{ asset('images/Magazine/IMG_1041-01.jpeg') }}">
-                    </div>
-                    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                    <div class="carousel-item">
-                        <img src="{{ asset('images/Magazine/IMG_1034-01.jpeg') }}">
-                    </div>
-                    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                    <div class="carousel-item">
-                    <img src="{{ asset('images/Magazine/IMG_1039-01.jpeg') }}">
-                    </div>
-                    <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-                    <label for="carousel-2" class="carousel-control next control-1">›</label>
-                    <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-                    <label for="carousel-3" class="carousel-control next control-2">›</label>
-                    <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-                    <label for="carousel-1" class="carousel-control next control-3">›</label>
-                    <ol class="carousel-indicators">
-                        <li>
-                            <label for="carousel-1" class="carousel-bullet">-</label>
-                        </li>
-                        <li>
-                            <label for="carousel-2" class="carousel-bullet">-</label>
-                        </li>
-                        <li>
-                            <label for="carousel-3" class="carousel-bullet">-</label>
-                        </li>
-                    </ol>
-                </div>
+    <section>        
+        <div class="sliderAx h-auto max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+            <div id="slider-1" class="container mx-auto">
+                <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url('images/images/Cropped-1.jpg')">
+                    <div class="md:w-1/2">
+                        <p class="font-bold text-sm uppercase">Services</p>
+                        <p class="text-3xl font-bold">Hello world</p>
+                        <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+                        <a href="#" class="bg-gray-600 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+                    </div>  
+                </div> <!-- container -->
             </div>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="{{ asset('images/Magazine/IMG_1041-01.jpeg') }}" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="{{ asset('images/Magazine/IMG_1034-01.jpeg') }}" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="{{ asset('images/Magazine/IMG_1039-01.jpeg') }}" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>-->
+            <div id="slider-2" class="container mx-auto">
+                <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url('images/images/Cropped-2.jpg')">
+            
+                    <p class="font-bold text-sm uppercase">Services</p>
+                    <p class="text-3xl font-bold">Hello world</p>
+                    <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+                    <a href="#" class="bg-gray-600 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+                
+                </div> <!-- container -->
+            </div>
+        </div>
+
+    </section>
 
     <!-- OUR PRODUCT -->
     <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
