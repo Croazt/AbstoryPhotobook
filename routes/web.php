@@ -40,3 +40,7 @@ Route::get('register', 'App\Http\Controllers\DependentDropdownController@regist_
 
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
+
+Route::get('/user/cart', function () {
+    return (view('user/cart'));
+})->middleware('auth');
