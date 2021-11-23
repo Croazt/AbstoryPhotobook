@@ -25,7 +25,6 @@
                 </div> <!-- container -->
             </div>
         </div>
-
     </section>
 
     <!-- OUR PRODUCT -->
@@ -35,16 +34,16 @@
                 Our Product
             </h1>
         </div>
-        <div class="text-center pb-12 space-x-5">
-            <a href="">All Product</a>
-            <a href="">Magazine</a>
-            <a href="">Product</a>
-            <a href="">Luxury</a>
+        <div class="pagination text-center pb-12 space-x-5">
+            <a href="" class="page-item current-page">All Product</a>
+            <a href="" class="page-item current-page">Magazine</a>
+            <a href="" class="page-item current-page">Product</a>
+            <a href="" class="page-item current-page">Luxury</a>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 tab-all-product">
+        <div class="card-content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 tab-all-product">
             <div>
-                <div class="mb-4">
+                <div class="card mb-4">
                     <img class="image-format-op" src="{{ asset('images/images/mag20x30l.jpeg') }}" alt="photo">
                 </div>
                 <div class="text-center">
@@ -53,7 +52,7 @@
                 </div>
             </div>
             <div>
-                <div class="mb-4">
+                <div class="card mb-4">
                     <img class="image-format-op" src="{{ asset('images/images/mag15x15s.jpeg') }}" alt="photo">
                 </div>
                 <div class="text-center">
@@ -62,7 +61,7 @@
                 </div>
             </div>
             <div>
-                <div class="mb-4">
+                <div class="card mb-4">
                     <img class="image-format-op" src="{{ asset('images/images/DSCF8754-01.jpeg') }}" alt="photo">
                 </div>
                 <div class="text-center">
@@ -71,7 +70,7 @@
                 </div>
             </div>
             <div>
-                <div class="mb-4">
+                <div class="card mb-4">
                     <img class="image-format-op" src="{{ asset('images/images/mag30x30s.jpeg') }}" alt="photo">
                 </div>
                 <div class="text-center">
@@ -80,7 +79,7 @@
                 </div>
             </div>
             <div>
-                <div class="mb-4">
+                <div class="card mb-4">
                     <img class="image-format-op" src="{{ asset('images/images/mag20x30p.jpeg') }}" alt="photo">
                 </div>
                 <div class="text-center">
@@ -89,7 +88,7 @@
                 </div>
             </div>
             <div>
-                <div class="mb-4">
+                <div class="card mb-4">
                     <img class="image-format-op" src="{{ asset('images/images/mag20x20s.jpeg') }}" alt="photo">
                 </div>
                 <div class="text-center">
@@ -97,8 +96,6 @@
                     <p class="text-base--op">Rp 500.000</p>
                 </div>
             </div>
-        </div>
-
     </section>
 
     <!-- WHATS ABSTORY OFFER -->
@@ -210,9 +207,7 @@
                 <div class="text-center">
                     <p class="text-xl-wts">Adzana Shaliha</p>
                     <p class="text-xl-wts">1 Januari 2021</p>
-                    <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quisquam
-                        eaque voluptatem explicabo repellat modi id cupiditate illo minima? Minima fugit velit tempora sint
-                        veniam iure, doloribus reiciendis officiis quod?</p>
+                    <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, doloribus quasi distinctio voluptatum nesciunt.</p>
                 </div>
             </div>
             <div class="box-format-wts">
@@ -222,9 +217,7 @@
                 <div class="text-center">
                     <p class="text-xl-wts">Angelina Christy</p>
                     <p class="text-xl-wts">1 Januari 2021</p>
-                    <p class="text-base-wts">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores odio
-                        aperiam officia, exercitationem libero soluta, illo quisquam expedita quibusdam amet sed maiores
-                        molestias veritatis tempore dignissimos! Ipsum aperiam dolor possimus.</p>
+                    <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, doloribus quasi distinctio voluptatum nesciunt.</p>
                 </div>
             </div>
             <div class="box-format-wts">
@@ -234,9 +227,7 @@
                 <div class="text-center">
                     <p class="text-xl-wts">Aninditha Rahma Cahyadi</p>
                     <p class="text-xl-wts">1 Januari 2021</p>
-                    <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, doloribus
-                        quasi distinctio voluptatum nesciunt dolorum omnis est maiores esse, at facere cupiditate veniam,
-                        aliquid blanditiis modi nemo. Impedit, repellat iure.</p>
+                    <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, doloribus quasi distinctio voluptatum nesciunt.</p>
                 </div>
             </div>
             <div class="box-format-wts">
@@ -246,9 +237,7 @@
                 <div class="text-center">
                     <p class="text-xl-wts">Ariella Calista Ichwan</p>
                     <p class="text-xl-wts">1 Januari 2021</p>
-                    <p class="text-base-wts">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora iusto odio
-                        voluptates natus maiores id nam, beatae quo, officiis ipsam praesentium quod numquam repudiandae non
-                        molestias consequatur eos quas itaque!</p>
+                    <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, doloribus quasi distinctio voluptatum nesciunt.</p>
                 </div>
             </div>
             <div class="box-format-wts">
@@ -258,9 +247,7 @@
                 <div class="text-center">
                     <p class="text-xl-wts">Azizi Asadel</p>
                     <p class="text-xl-wts">1 Januari 2021</p>
-                    <p class="text-base-wts flex">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ad nesciunt?
-                        Ratione molestias ex culpa! Beatae, non facilis id harum consectetur officiis eius blanditiis
-                        voluptatibus repellendus distinctio atque odio minima!</p>
+                    <p class="text-base-wts flex">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, doloribus quasi distinctio voluptatum nesciunt.</p>
                 </div>
             </div>
             <div class="box-format-wts">
@@ -270,13 +257,10 @@
                 <div class="text-center">
                     <p class="text-xl-wts">Cindy Hapsari Maharani</p>
                     <p class="text-xl-wts">1 Januari 2021</p>
-                    <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fuga corporis
-                        aliquam a accusamus optio, quidem ullam. Porro animi nemo doloremque, nulla sint veritatis libero ex
-                        vel assumenda qui atque.</p>
+                    <p class="text-base-wts">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, doloribus quasi distinctio voluptatum nesciunt.</p>
                 </div>
             </div>
         </div>
-
     </section>
     
     <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-6 py-12">

@@ -60,3 +60,5 @@ function sliderButton1(){
         $("#sButton1").addClass("bg-gray-600");
         loopSlider();
     });
+
+       
