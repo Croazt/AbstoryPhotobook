@@ -211,7 +211,6 @@
             </div>
         </div>
     </section>
-<<<<<<< HEAD
 
     <script>
         window.addEventListener('DOMContentLoaded', function() {
@@ -340,7 +339,6 @@
             });
         });
     </script>
-=======
     
     <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-6 py-12">
             <div class="box-format-wts">
@@ -353,5 +351,4 @@
                 </div>
             </div>
         </section>
->>>>>>> 9a7c1adeab3e848c444659b8c6a1a03b657fe57f
 @endsection

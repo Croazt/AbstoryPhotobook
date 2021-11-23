@@ -46,4 +46,4 @@ Route::get('/produk', [\App\Http\Controllers\ProductsController::class, 'view'])
 
 Route::get('/user/cart', function () {
     return (view('user/cart'));
-})->middleware('auth');
+})->middleware('auth')->name('viewCart');
