@@ -3,6 +3,10 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+
+
+
 .textarea{
     @apply  px-2 py-1  h-16 placeholder-gray-400 text-gray-600 relative bg-white  rounded text-sm border  outline-none focus:outline-none focus:ring w-full
 }
@@ -68,3 +72,6 @@
 .text-base-wts{
     @apply text-gray-700 font-normal text-left
 }
+
+/* Pagination */
+

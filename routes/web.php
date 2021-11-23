@@ -43,3 +43,7 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 Route::get('/products/{type}', [\App\Http\Controllers\ProductsController::class, 'index'])->name('getProduct');
 Route::get('/products/{id}', [\App\Http\Controllers\ProductsController::class, 'ProductDetail'])->name('getDetailProduct');
 Route::get('/produk', [\App\Http\Controllers\ProductsController::class, 'view'])->name('viewProduct');
+
+Route::get('/user/cart', function () {
+    return (view('user/cart'));
+})->middleware('auth');
