@@ -139,19 +139,21 @@
                 </div>
 
                 <div class="pt-12 ">
-                <p class="text-center font-semibold text-4xl">Payment Method</p>
-            </div>
-            <div class="flex">
-                <div class="w-1/5"></div>
-                <div class="w-1/5 item-center m-8">
-                    <img class="item-center mx-auto h-26" src="{{ asset('images/payment.png') }}" alt="">
+                    <p class="text-center font-semibold text-4xl">Payment Method</p>
                 </div>
-                <div class="w-2/5 items-center m-8 text-center">
-                    <p class="mt-6 font-bold">1902210673</p>
-                    <p class="mt-6 font-semibold">Si Fulan binti Fulansyah</p>
+
+                <div class="flex">
+                    <div class="w-1/5"></div>
+                    <div class="w-1/5 item-center m-8">
+                        <img class="item-center mx-auto h-26" src="{{ asset('images/payment.png') }}" alt="">
+                    </div>
+                    <div class="w-2/5 items-center m-8 text-center">
+                        <p class="mt-6 font-bold">1902210673</p>
+                        <p class="mt-6 font-semibold">Si Fulan binti Fulansyah</p>
+                    </div>
+                    <div class="w-1/5"></div>
                 </div>
-                <div class="w-1/5"></div>
-            </div>
+
             <span class="text-center mx-auto text-sm">
                 <button class="bg-gray-500 font-semibold hover:bg-gray-600 p-4 text-sm w-full rounded-md text-white uppercase">Print Invoice</button>
             </span>

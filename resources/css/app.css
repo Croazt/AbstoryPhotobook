@@ -80,5 +80,8 @@
     @apply text-gray-700 font-normal text-left
 }
 
-/* Pagination */
+/* Invoice */
+.box-format-invoice{
+    @apply w-full bg-white rounded-md shadow-xl p-12 flex flex-col justify-center items-center
+}
 

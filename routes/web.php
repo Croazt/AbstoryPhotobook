@@ -52,3 +52,7 @@ Route::post('/checkout',[\App\Http\Controllers\PesananController::class, 'checko
 Route::get('/user/checkout', function () {
     return (view('user/checkout'));
 })->middleware('auth')->name('CheckOut');
+
+Route::get('/user/invoice', function () {
+    return (view('user/invoice'));
+})->middleware('auth')->name('Invoice');
