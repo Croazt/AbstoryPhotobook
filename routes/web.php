@@ -41,9 +41,10 @@ Route::get('register', 'App\Http\Controllers\DependentDropdownController@regist_
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
 Route::get('/products/{type}', [\App\Http\Controllers\ProductsController::class, 'index'])->name('getProduct');
-Route::get('/products/{id}', [\App\Http\Controllers\ProductsController::class, 'ProductDetail'])->name('getDetailProduct');
 Route::get('/produk', [\App\Http\Controllers\ProductsController::class, 'view'])->name('viewProduct');
+Route::get('/produk/{id}', [\App\Http\Controllers\ProductsController::class, 'ProductDetail'])->name('getDetailProduct');
 
 Route::get('/user/cart', function () {
     return (view('user/cart'));
 })->middleware('auth')->name('viewCart');
+Route::post('/cart', [\App\Http\Controllers\CartController::class, 'Store'])->name('addCart');

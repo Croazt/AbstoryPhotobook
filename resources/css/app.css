@@ -18,6 +18,9 @@
 .textarea-col{
     @apply flex-col h-16 mb-4 md:w-full sm:w-128  w-96
 }
+.button{
+    @apply h-16 rounded bg-utama text-white outline-none sm:w-52 w-48 text-xl font-semibold
+}
 
 .big-button{
     @apply h-16 rounded bg-utama text-white outline-none sm:w-64 w-52 text-lg font-bold

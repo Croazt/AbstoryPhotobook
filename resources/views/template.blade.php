@@ -30,6 +30,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <body>
+    @include('sweetalert::alert')
     @include('include/header')
     @yield('content')
     @include('include/footer')
