@@ -6,9 +6,15 @@ use Illuminate\Http\Request;
 use App\Models\Cart;
 use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
-
+use Illuminate\Support\Facades\DB;
 class CartController extends Controller
 {
+    public function index(){
+        $cart = DB::table('carts')->join('products','products.id','=','carts.id_product')->where('id_user','=',Auth::user()->id)->select('products.id','products.price','carts.qty','carts.orientation','products.name','products.category')->get();
+        error_log($cart);
+        return view('user/cart', ['product'=> $cart]);
+    }
+
     public function store(Request $request)
     {
         switch ($request->input('action')) {
@@ -30,11 +36,11 @@ class CartController extends Controller
                 }
 
                 Alert::success('Produk', 'Berhasil input kedalam cart');
-                return view('user/cart');
+                return redirect()->back();
                 break;
 
             case 'Order':
-                # code...
+                
                 break;
         }
     }

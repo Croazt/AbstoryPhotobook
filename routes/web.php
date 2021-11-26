@@ -44,7 +44,7 @@ Route::get('/products/{type}', [\App\Http\Controllers\ProductsController::class,
 Route::get('/produk', [\App\Http\Controllers\ProductsController::class, 'view'])->name('viewProduct');
 Route::get('/produk/{id}', [\App\Http\Controllers\ProductsController::class, 'ProductDetail'])->name('getDetailProduct');
 
-Route::get('/user/cart', function () {
-    return (view('user/cart'));
-})->middleware('auth')->name('viewCart');
+Route::get('/cart',[\App\Http\Controllers\CartController::class, 'index'])->middleware('auth')->name('viewCart');
 Route::post('/cart', [\App\Http\Controllers\CartController::class, 'Store'])->name('addCart');
+
+Route::post('/checkout',[\App\Http\Controllers\PesananController::class, 'checkoutView'])->middleware('auth')->name('checkoutView');

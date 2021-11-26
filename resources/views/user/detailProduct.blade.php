@@ -40,7 +40,7 @@
                             <input id="orie" type="hidden" value="Landscape" name="orientation">
                             <label class="text-xl" for="orie">Landscape</label>
                         @else
-                            <input id="orie" type="hidden" value="None" name="orientation">
+                            <input id="orie" type="hidden" value="Square" name="orientation">
                             <label class="text-xl" for="orie">-</label>
                         @endif
                     </div>
