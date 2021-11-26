@@ -48,3 +48,7 @@ Route::get('/cart',[\App\Http\Controllers\CartController::class, 'index'])->midd
 Route::post('/cart', [\App\Http\Controllers\CartController::class, 'Store'])->name('addCart');
 
 Route::post('/checkout',[\App\Http\Controllers\PesananController::class, 'checkoutView'])->middleware('auth')->name('checkoutView');
+
+Route::get('/user/checkout', function () {
+    return (view('user/checkout'));
+})->middleware('auth')->name('CheckOut');

@@ -27,7 +27,11 @@
 }
 
 .sec-title{
-    @apply font-semibold text-3xl md:text-4xl lg:text-5xl text-black
+    @apply text-3xl md:text-4xl lg:text-5xl text-black
+}
+
+.sec-title-two{
+    @apply text-3xl md:text-4xl lg:text-5xl text-black
 }
 
 /* OUR PRODUCT */
