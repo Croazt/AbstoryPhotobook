@@ -48,3 +48,7 @@ Route::get('/user/cart', function () {
     return (view('user/cart'));
 })->middleware('auth')->name('viewCart');
 Route::post('/cart', [\App\Http\Controllers\CartController::class, 'Store'])->name('addCart');
+
+Route::get('/user/checkout', function () {
+    return (view('user/checkout'));
+})->middleware('auth')->name('CheckOut');

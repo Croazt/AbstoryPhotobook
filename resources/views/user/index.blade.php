@@ -34,7 +34,7 @@
                 Our Product
             </h1>
         </div>
-        <div class="flex pb-12 space-x-5">
+        <div class="flex pb-12 space-x-5 justify-center">
             <div id="all" class="cursor-pointer">All Product</div>
             <div id="mag" class="cursor-pointer">Magazine</div>
             <div id="pre" class="cursor-pointer">Premiere</div>
@@ -88,7 +88,6 @@
                     <p class="text-xl-wao">Shipping Cost Subsidized</p>
                 </div>
             </div>
-
         </div>
 
     </section>
