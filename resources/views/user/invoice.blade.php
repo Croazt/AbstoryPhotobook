@@ -10,13 +10,31 @@
         </div>
 
         <div class="box-format-invoice">
-            <div class="flex w-full items-center text-center pb-5">
-                <h3 class="font-semibold text-gray-600 text-xs uppercase w-1/5">Invoice #AB01973630</h3>
-                <h3 class="font-semibold text-gray-600 text-xs uppercase w-1/5 border-2 border-red-600 rounded-md">Menunggu Pembayaran</h3>
-                <span class="w-2/5"></span>
-                <h3 class="font-semibold text-gray-600 text-xs uppercase w-1/5 text-center">16 November 2021 - 19.57</h3>  
+            <div class="w-full items-center">
+                <h3 class="font-semibold text-gray-600 text-xs uppercase p-2">Invoice #AB01973630</h3>
+                <h3 class="font-semibold text-gray-600 text-xs uppercase p-2">16 November 2021 - 19.57</h3>  
+                <h3 class="font-bold text-xs uppercase text-red-600 rounded-md p-2">Menunggu Pembayaran</h3>
              </div>
 
+             <!--
+             <div class="flex items-cente mx-auto p-6">
+                    <div class="flex">
+                        <div class="w-1/5">
+                            <img class="image-format-op" src="{{ asset('images/images/mag15x15s.jpeg') }}" alt="photo">
+                        </div>
+                        <div class="flex flex-col justify-between ml-4 flex-grow w-1/5">
+                            <span class="font-bold text-sm">Magazine</span>
+                            <span class="text-xs">Layout : Landscape</span>
+                            <span class="text-xs">Quantity : 2</span>
+                        </div>
+                    </div>
+                    <div class="text-center font-regular text-sm w-1/5 mx-2 sm:mx-4">Rp 345.000</div>
+                    <div class="text-center font-regular text-sm w-1/5 mx-2 sm:mx-4">Rp 690.000</div>
+                    
+            </div>
+            -->
+
+              
              <div class="flex w-full items-center">
                 <div class="w-2/5">
                     <h3 class="font-semibold pb-4">Shipping To :</h3>
@@ -66,7 +84,8 @@
                 </div>
 
              </div>
-        </div>
+        </div> 
+
 
 
         <div class="pt-12 ">
