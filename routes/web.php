@@ -56,3 +56,11 @@ Route::get('/user/checkout', function () {
 Route::get('/user/invoice', function () {
     return (view('user/invoice'));
 })->middleware('auth')->name('Invoice');
+
+Route::get('/user/payconfirm', function () {
+    return (view('user/payconfirm'));
+})->middleware('auth')->name('payconfirm');
+
+Route::get('/user/upload', function () {
+    return (view('user/upload'));
+})->middleware('auth')->name('upload');

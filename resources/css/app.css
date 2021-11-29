@@ -85,3 +85,8 @@
     @apply w-full bg-white rounded-md shadow-xl p-12 flex flex-col justify-center items-center
 }
 
+/* Upload Form */
+.box-format-uf{
+    @apply w-full bg-white rounded-lg shadow-lg p-12 flex flex-col
+}
+
