@@ -36,7 +36,7 @@
 
 /* OUR PRODUCT */
 .image-format-op{
-    @apply object-center rounded-lg object-cover 
+    @apply object-center rounded-lg
 }
 
 .text-base-op{
