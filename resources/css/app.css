@@ -87,6 +87,11 @@
 
 /* Upload Form */
 .box-format-uf{
-    @apply w-full bg-white rounded-lg shadow-lg p-12 flex flex-col
+    @apply w-full bg-white rounded-lg shadow-lg p-12
+}
+
+/* sub title upload*/
+.sec-title-u{
+    @apply text-2xl md:text-2xl lg:text-3xl text-black
 }
 
