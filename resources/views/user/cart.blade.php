@@ -30,7 +30,8 @@
                             <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
                         </div>
                     </div>
-                    <input type="hidden" name="item[{{$key}}][name]" type="text" value="{{$data->name . '('.$data->orientation.')'}}">
+                    <input type="hidden" name="item[{{$key}}][orientation]" type="text" value="{{$data->orientation}}">
+                    <input type="hidden" name="item[{{$key}}][name]" type="text" value="{{$data->name}}">
                     <div class="flex justify-center w-1/5">
                         <svg class="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
                             <path
@@ -38,6 +39,7 @@
                         </svg>
 
                         <input class="mx-2 border text-center w-8" name="item[{{$key}}][qty]" type="text" value="{{$data->qty}}">
+                        <input class="mx-2 border text-center w-8" name="item[{{$key}}][price]" type="hidden" value="{{$data->price}}">
 
                         <svg class="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
                             <path

@@ -12,6 +12,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laravolt/indonesia": "^0.30.0",
+        "ramsey/uuid": "^4.2",
         "realrashid/sweet-alert": "^4.1"
     },
     "require-dev": {
