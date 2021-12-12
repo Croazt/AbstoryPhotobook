@@ -160,6 +160,10 @@
                 <div class="pt-12 ">
                     <p class="text-center font-semibold text-4xl">Payment Method</p>
                 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0c1a0a98d7f4a5df8a1f33d2df041e5aebd076a0
                 <div class="flex">
                     <div class="w-1/5"></div>
                     <div class="w-1/5 item-center m-8">
@@ -171,12 +175,17 @@
                     </div>
                     <div class="w-1/5"></div>
                 </div>
-                <span class="text-center mx-auto text-sm">
-                    <button
-                        class="bg-gray-500 font-semibold hover:bg-gray-600 p-4 text-sm w-full rounded-md text-white uppercase">Print
-                        Invoice</button>
-                </span>
+
+            <span class="text-center mx-auto text-sm">
+                <button class="bg-gray-500 font-semibold hover:bg-gray-600 p-4 text-sm w-full rounded-md text-white uppercase">Print Invoice</button>
+            </span>
+                
             </div>
+            
+    
+  </div>
+    
+</section>
 
         </section>
     </form>
