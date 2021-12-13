@@ -68,3 +68,7 @@ Route::get('/user/upload', function () {
 Route::get('/user/rules', function () {
     return (view('user/rules'));
 })->middleware('auth')->name('rules');
+
+Route::get('/user/preview', function () {
+    return (view('user/preview'));
+})->middleware('auth')->name('preview');
