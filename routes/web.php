@@ -64,3 +64,11 @@ Route::get('/user/payconfirm', function () {
 Route::get('/user/upload', function () {
     return (view('user/upload'));
 })->middleware('auth')->name('upload');
+
+Route::get('/user/rules', function () {
+    return (view('user/rules'));
+})->middleware('auth')->name('rules');
+
+Route::get('/user/preview', function () {
+    return (view('user/preview'));
+})->middleware('auth')->name('preview');
