@@ -54,13 +54,16 @@ Route::get('/user/checkout', function () {
 })->middleware('auth')->name('CheckOut');
 
 Route::post('/pesan',[\App\Http\Controllers\PesananController::class, 'createPesanan'])->middleware('auth')->name('pesan');
+Route::get('/pesanan/{id}',[\App\Http\Controllers\PesananController::class, 'detailPesanan'])->middleware('auth')->name('detailPesananView');
+
 Route::get('/user/invoice', function () {
     return (view('user/invoice'));
 })->middleware('auth')->name('Invoice');
 
-Route::get('/user/payconfirm', function () {
-    return (view('user/payconfirm'));
+Route::get('/pesanan/{id}/confirmpay', function ($id) {
+    return (view('user/payconfirm', ["data"=>$id]));
 })->middleware('auth')->name('payconfirm');
+Route::post('/pesanan/{id}/confirmpay', [\App\Http\Controllers\PesananController::class, 'pay'])->middleware('auth')->name('sendpay');
 
 Route::get('/user/upload', function () {
     return (view('user/upload'));

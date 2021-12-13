@@ -45,30 +45,32 @@
                     <div class="hidden sm:block sm:ml-6">
                         <div class="flex space-x-4">
                             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" class="bg-utama text-white px-3 py-2 rounded-md text-sm font-medium"
-                                aria-current="page">Home</a>
+                            <a href="{{ route('home') }}" class="home nav-notactive" aria-current="page">Home</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Products</a>
+                            <a href="{{ route('viewProduct') }}" class="produk nav-notactive">Products</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium">How
+                            <a href="#" class="howto nav-notactive">How
                                 To Order</a>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                            <a href="#" class="contact nav-notactive">Contact</a>
 
                             @guest
-                                <a class="text-gray-300 hover:bg-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                    href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="login nav-notactive" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 @if (Route::has('register'))
-                                    <a class="text-gray-300 hover:bg-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    <a class="register nav-notactive"
                                         href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             @endguest
                         </div>
                     </div>
                 </div>
+                <script>
+                    $(function() {
+                        var loc = $(location).prop('pathname').split('/')[1]
+                        $("."+loc).toggleClass("nav-nonactive")
+                        $("."+loc).toggleClass("nav-active")
+                    })
+                </script>
                 <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/custom-forms@0.2.1/dist/custom-forms.css"
                     rel="stylesheet" />
                 <!-- Required font awesome -->
@@ -97,7 +99,7 @@
 
                                     @else
                                         <img class="h-8 w-8 rounded-full"
-                                            src="{{ asset('images/user_pic/'.Auth::user()->pic) }}" alt="">
+                                            src="{{ asset('images/user_pic/' . Auth::user()->pic) }}" alt="">
                                     @endguest
                                 </button>
                             </div>
@@ -135,8 +137,8 @@
                                 <!-- Active: "bg-gray-100", Not Active: "" -->
                                 <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
                                     id="user-menu-item-0">Your Profile</a>
-                                <a href="{{route('viewCart')}}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                                    id="user-menu-item-1">Cart</a>
+                                <a href="{{ route('viewCart') }}" class="block px-4 py-2 text-sm text-gray-700"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-1">Cart</a>
                                 <a href="{{ route('logout') }}" class="block px-4 py-2 text-sm text-gray-700"
                                     role="menuitem" tabindex="-1"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
@@ -155,7 +157,8 @@
         <div class="hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-utama text-white block px-3 py-2 rounded-md text-base font-medium"
+                <a href="{{ route('viewProduct') }}"
+                    class="bg-utama text-white block px-3 py-2 rounded-md text-base font-medium"
                     aria-current="page">Home</a>
 
                 <a href="#"
@@ -180,7 +183,7 @@
 
                     <a href="{{ route('logout') }}" class="no-underline hover:underline"
                         onclick="event.preventDefault();
-                                                                                                                                            document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                                                                                                                                                document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                         {{ csrf_field() }}
                     </form>

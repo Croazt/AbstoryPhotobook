@@ -160,10 +160,6 @@
                 <div class="pt-12 ">
                     <p class="text-center font-semibold text-4xl">Payment Method</p>
                 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 0c1a0a98d7f4a5df8a1f33d2df041e5aebd076a0
                 <div class="flex">
                     <div class="w-1/5"></div>
                     <div class="w-1/5 item-center m-8">
