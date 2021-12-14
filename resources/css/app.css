@@ -103,3 +103,21 @@
 .nav-notactive{
     @apply text-gray-300 hover:bg-gray-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium
 }
+
+/* My Profile */
+.image-format-mp{
+    @apply object-center object-cover rounded-full h-64 w-64
+}
+.box-format-mp{
+    @apply flex w-full bg-white rounded-lg shadow-lg flex-col justify-center items-center
+}
+
+/* Order */
+.image-format-order{
+    @apply object-center rounded-lg w-48
+}
+.box-format-order{
+    @apply bg-white rounded-lg p-12 mb-12 shadow-xl justify-center items-center
+}
+
+

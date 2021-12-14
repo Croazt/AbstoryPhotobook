@@ -76,3 +76,19 @@ Route::get('/user/rules', function () {
 Route::get('/user/preview', function () {
     return (view('user/preview'));
 })->middleware('auth')->name('preview');
+
+Route::get('/user/profile', function () {
+    return (view('user/profile'));
+})->middleware('auth')->name('profile');
+
+Route::get('/user/order', function () {
+    return (view('user/order'));
+})->middleware('auth')->name('order');
+
+Route::get('/user/howto', function () {
+    return (view('user/howto'));
+})->middleware('auth')->name('howto');
+
+Route::get('/user/contact', function () {
+    return (view('user/contact'));
+})->middleware('auth')->name('contact');
