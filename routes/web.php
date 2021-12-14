@@ -84,3 +84,11 @@ Route::get('/user/profile', function () {
 Route::get('/user/order', function () {
     return (view('user/order'));
 })->middleware('auth')->name('order');
+
+Route::get('/user/howto', function () {
+    return (view('user/howto'));
+})->middleware('auth')->name('howto');
+
+Route::get('/user/contact', function () {
+    return (view('user/contact'));
+})->middleware('auth')->name('contact');
