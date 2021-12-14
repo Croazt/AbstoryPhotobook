@@ -79,14 +79,34 @@ class PesananController extends Controller
         if ($pesanan->count() == 0) {
             abort(403);
         } else {
-            $filename = "Proof-" . $id . $file->getClientOriginalExtension();
+            $filename = "Proof-" . $id  .'.'.$file->getClientOriginalExtension();
             $pesanans = Pesanan::where(['id_user' => Auth::user()->id, 'id' => $id])
                 ->update(['status' => 1, 'pic_proof' => $filename]);
             $tujuan_upload = 'payment_proof';
             $file->move($tujuan_upload, $filename);
         }
+        $pesananProduk = DB::table('pesanan_produks')->join('products', 'products.id', '=', 'pesanan_produks.id_product')->where('id_pesanan', '=', $id)->select('products.id', 'products.price', 'pesanan_produks.qty', 'pesanan_produks.orientation', 'products.name', 'products.category')->get();
 
-        return view('user/pesananview', ['pesanan' => $pesanan]);
+        return view('user/invoice', ['pesanan' => $pesanan, 'pesananProduk' => $pesananProduk]);
+    }
+
+    public function updateStatus(Request $request, $id)
+    {
+
+
+        $pesanan = Pesanan::where(['id_user' => Auth::user()->id, 'id' => $id])->get();
+
+    
+        if ($pesanan->count() == 0) {
+            abort(403);
+        } else {
+         
+            $pesanans = Pesanan::where(['id_user' => Auth::user()->id, 'id' => $id])
+                ->update(['status' => $request->status]);
+        }
+        $pesananProduk = DB::table('pesanan_produks')->join('products', 'products.id', '=', 'pesanan_produks.id_product')->where('id_pesanan', '=', $id)->select('products.id', 'products.price', 'pesanan_produks.qty', 'pesanan_produks.orientation', 'products.name', 'products.category')->get();
+
+        return view('user/invoice', ['pesanan' => $pesanan, 'pesananProduk' => $pesananProduk]);
     }
     public function detailPesanan($id)
     {

@@ -65,6 +65,14 @@ Route::get('/pesanan/{id}/confirmpay', function ($id) {
 })->middleware('auth')->name('payconfirm');
 Route::post('/pesanan/{id}/confirmpay', [\App\Http\Controllers\PesananController::class, 'pay'])->middleware('auth')->name('sendpay');
 
+Route::get('/pesanan/{id}/album', [\App\Http\Controllers\AlbumController::class, 'index'])->middleware('auth')->name('album');
+Route::post('/pesanan/{id}/album/upfirst/{id_product}', [\App\Http\Controllers\AlbumController::class, 'uploadFirst'])->middleware('auth')->name('uploadfirstphoto');
+Route::post('/pesanan/{id}/album/upone/{id_product}', [\App\Http\Controllers\AlbumController::class, 'uploadOne'])->middleware('auth')->name('uploadone');
+Route::post('/pesanan/{id}/album/updatejudul/{id_product}', [\App\Http\Controllers\AlbumController::class, 'updateJudul'])->middleware('auth')->name('upjudul');
+Route::post('/pesanan/{id}/album/revisi/{id_product}', [\App\Http\Controllers\AlbumController::class, 'addRevisi'])->middleware('auth')->name('revisi');
+
+Route::post('/updatestatus/{id}', [\App\Http\Controllers\PesananController::class, 'updateStatus'])->middleware('auth')->name('updateStatus');
+
 Route::get('/user/upload', function () {
     return (view('user/upload'));
 })->middleware('auth')->name('upload');
