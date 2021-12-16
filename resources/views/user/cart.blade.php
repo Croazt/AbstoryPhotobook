@@ -75,8 +75,8 @@
             <span class="w-4/5"></span>
             <span class="text-center w-1/5 text-sm">
                 <button
-                    class="bg-gray-500 font-semibold hover:bg-gray-600 py-3 text-sm w-full rounded-md text-white uppercase">Continue
-                    Shopping</button>
+                    class="bg-gray-500 font-semibold hover:bg-gray-600 py-3 text-sm w-full rounded-md text-white uppercase"> <a href="{{ route('home')}}">Continue
+                    Shopping</a> </button>
             </span>
         </div>
     </div>
