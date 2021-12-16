@@ -102,28 +102,28 @@ Route::get('/user/contact', function () {
 })->middleware('auth')->name('contact');
 
 
-    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
+Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index');
 
-    Route::get('/produk', 'App\Http\Controllers\ProdukController@index')->name('getProdukAdmin');
-    Route::get('/produk/add', 'App\Http\Controllers\ProdukController@add')->name('addProdukAdmin');
-    Route::post('/produk/create', 'App\Http\Controllers\ProdukController@create')->name('createProdukAdmin');
-    Route::get('/produk/{id}/detail', 'App\Http\Controllers\ProdukController@view')->name('detailProdukAdmin');
-    Route::get('/produk/{id}/edit', 'App\Http\Controllers\ProdukController@edit')->name('editProdukAdmin');
-    Route::post('/produk/{id}/update', 'App\Http\Controllers\ProdukController@update')->name('updateProdukAdmin');
-    Route::get('/produk/{id}/delete', 'App\Http\Controllers\ProdukController@delete')->name('deleteProdukAdmin');
+Route::get('admin/produk', 'App\Http\Controllers\ProdukController@index')->name('getProdukAdmin');
+Route::get('admin/produk/add', 'App\Http\Controllers\ProdukController@add')->name('addProdukAdmin');
+Route::post('admin/produk/create', 'App\Http\Controllers\ProdukController@create')->name('createProdukAdmin');
+Route::get('admin/produk/{id}/detail', 'App\Http\Controllers\ProdukController@view')->name('detailProdukAdmin');
+Route::get('admin/produk/{id}/edit', 'App\Http\Controllers\ProdukController@edit')->name('editProdukAdmin');
+Route::post('admin/produk/{id}/update', 'App\Http\Controllers\ProdukController@update')->name('updateProdukAdmin');
+Route::get('admin/produk/{id}/delete', 'App\Http\Controllers\ProdukController@delete')->name('deleteProdukAdmin');
 
-    Route::get('/customer', 'App\Http\Controllers\UserController@listCustomer')->name('customerAdmin');
+Route::get('/customer', 'App\Http\Controllers\UserController@listCustomer')->name('customerAdmin');
 
 
-    Route::get('/order', 'App\Http\Controllers\OrderController@index')->name('orderProdukAdmin');
-    Route::get('/order/{id}/details', 'App\Http\Controllers\OrderController@detailorder')->name('detailProdukAdmin');
-    Route::get('/order/{id}/{status}/update', 'App\Http\Controllers\OrderController@update')->name('updateProdukAdmin');
+Route::get('/order', 'App\Http\Controllers\OrderController@index')->name('orderProdukAdmin');
+Route::get('/order/{id}/details', 'App\Http\Controllers\OrderController@detailorder')->name('detailProdukAdmin');
+Route::get('/order/{id}/{status}/update', 'App\Http\Controllers\OrderController@update')->name('updateProdukAdmin');
 
-    Route::get('/admin', 'App\Http\Controllers\UserController@listAdmin')->name('controlAdmin');
-    Route::get('/admin/add', 'App\Http\Controllers\UserController@addAdmin')->name('addUserAdmin');
-    Route::post('/admin/create', 'App\Http\Controllers\UserController@createAdmin')->name('createUserAdmin');
-    Route::get('/admin/{id}/delete', 'App\Http\Controllers\UserController@deleteAdmin')->name('deleteUserAdmin');
+Route::get('/admin', 'App\Http\Controllers\UserController@listAdmin')->name('controlAdmin');
+Route::get('/admin/add', 'App\Http\Controllers\UserController@addAdmin')->name('addUserAdmin');
+Route::post('/admin/create', 'App\Http\Controllers\UserController@createAdmin')->name('createUserAdmin');
+Route::get('/admin/{id}/delete', 'App\Http\Controllers\UserController@deleteAdmin')->name('deleteUserAdmin');
 
-    Route::get('/admin/profil', function () {
-        return view('admin.profil_admin')->name('profileAdmin');
-    });
+Route::get('/admin/profil', function () {
+    return view('admin.profil_admin')->name('profileAdmin');
+});
