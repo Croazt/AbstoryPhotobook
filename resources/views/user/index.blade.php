@@ -4,30 +4,32 @@
     <section>
         <div class="sliderAx h-auto max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
             <div id="slider-1" class="container mx-auto">
-                <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill"
+                <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill rounded-lg"
                     style="background-image: url('images/images/Cropped-1.jpg')">
-                    <div class="md:w-1/2">
-                        <p class="font-bold text-sm uppercase">Services</p>
-                        <p class="text-3xl font-bold">Hello world</p>
-                        <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
-                        <a href="#"
-                            class="bg-gray-600 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact
-                            us</a>
+                    <div class="bg-opacity-70 bg-gray-600 p-5 rounded-lg">
+                        <div>
+                            <img class="image-format-wao text-center items-center mx-auto mb-10" src="{{ asset('images/Logo.png') }}" alt="photo">
+                        </div>
+                        <div class="bg-white text-center items-center mx-auto p-5 rounded-lg">
+                            <p class="text-3xl font-semibold text-gray-600">Abstory Present's</p>
+                        </div>
+                            <p class="text-2xl mb-10 leading-none text-center items-center mx-auto p-5">PREMIUM QUALITY PHOTOBOOK</p>
                     </div>
                 </div> <!-- container -->
             </div>
 
             <div id="slider-2" class="container mx-auto">
-                <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill"
+                <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill rounded-lg"
                     style="background-image: url('images/images/Cropped-2.jpg')">
-
-                    <p class="font-bold text-sm uppercase">Services</p>
-                    <p class="text-3xl font-bold">Hello world</p>
-                    <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
-                    <a href="#"
-                        class="bg-gray-600 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact
-                        us</a>
-
+                    <div class="bg-opacity-70 bg-gray-600 p-5 rounded-lg">
+                        <div>
+                            <img class="image-format-wao text-center items-center mx-auto mb-10" src="{{ asset('images/Logo.png') }}" alt="photo">
+                        </div>
+                        <div class="bg-white text-center items-center mx-auto p-5 rounded-lg">
+                            <p class="text-3xl font-semibold text-gray-600">Abstory Present's</p>
+                        </div>
+                            <p class="text-2xl mb-10 leading-none text-center items-center mx-auto p-5">PREMIUM QUALITY PHOTOBOOK</p>
+                    </div>
                 </div> <!-- container -->
             </div>
         </div>

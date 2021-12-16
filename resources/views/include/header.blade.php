@@ -49,10 +49,10 @@
 
                             <a href="{{ route('viewProduct') }}" class="produk nav-notactive">Products</a>
 
-                            <a href="#" class="howto nav-notactive">How
+                            <a href="{{ route('howto') }}" class="howto nav-notactive">How
                                 To Order</a>
 
-                            <a href="#" class="contact nav-notactive">Contact</a>
+                            <a href="{{ route('contact') }}" class="contact nav-notactive">Contact</a>
 
                             @guest
                                 <a class="login nav-notactive" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -135,7 +135,7 @@
                                 </a>
                             @else
                                 <!-- Active: "bg-gray-100", Not Active: "" -->
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+                                <a href="{{ route('profile') }}" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
                                     id="user-menu-item-0">Your Profile</a>
                                 <a href="{{ route('viewCart') }}" class="block px-4 py-2 text-sm text-gray-700"
                                     role="menuitem" tabindex="-1" id="user-menu-item-1">Cart</a>

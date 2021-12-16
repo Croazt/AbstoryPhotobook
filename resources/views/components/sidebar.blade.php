@@ -1,13 +1,10 @@
 <div class="main-sidebar">
   <aside id="sidebar-wrapper">
-    <div class="login-brand">
-      <img class="logo" src="{{ asset('home/Hitam.png') }}" alt="logo" width="100" id="logoAbstory">
-    </div>
     <div class="sidebar-brand">
       <a href="/dashboard">Abstory</a>
     </div>
     <div class="sidebar-brand sidebar-brand-sm">
-      <a href="index.html">Ab</a>
+      <a href="#">A</a>
     </div>
     <ul class="sidebar-menu">
       <li class="menu-header">Menu</li>
