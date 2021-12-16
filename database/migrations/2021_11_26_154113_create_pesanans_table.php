@@ -33,6 +33,7 @@ class CreatePesanansTable extends Migration
             $table->foreign('id_user')->references('id')->on('users');
             $table->timestamps();
         });
+
     }
 
     /**
@@ -42,6 +43,7 @@ class CreatePesanansTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('pesanan_produks');
         Schema::dropIfExists('pesanans');
     }
 }

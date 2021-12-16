@@ -20,36 +20,38 @@
 
                 @elseif ($pesanan[0]->status == 1)
                     <h3 class="font-bold text-xs uppercase text-red-600 rounded-md p-2">Pembayaran Belum Dikonfirmasi</h3>
-
                 @elseif ($pesanan[0]->status == 2)
-                    <h3 class="font-bold text-xs uppercase text-red-600 rounded-md p-2">Dalam Proses</h3>
+                    <h3 class="font-bold text-xs uppercase text-red-600 rounded-md p-2">Dalam Proses Pembuatan</h3>
 
                 @elseif ($pesanan[0]->status == 3)
-                    <h3 class="font-bold text-xs uppercase text-red-600 rounded-md p-2">Dikirim</h3>
+                    <h3 class="font-bold text-xs uppercase text-red-600 rounded-md p-2">Dalam Proses Pengemasan</h3>
 
                 @elseif ($pesanan[0]->status == 4)
+                    <h3 class="font-bold text-xs uppercase text-red-600 rounded-md p-2">Dikirim</h3>
+
+                @elseif ($pesanan[0]->status == 5)
                     <h3 class="font-bold text-xs uppercase text-red-600 rounded-md p-2">Selesai</h3>
 
                 @endif
             </div>
 
             <!--
-                                                 <div class="flex items-cente mx-auto p-6">
-                                                        <div class="flex">
-                                                            <div class="w-1/5">
-                                                                <img class="image-format-op" src="{{ asset('images/images/mag15x15s.jpeg') }}" alt="photo">
+                                                     <div class="flex items-cente mx-auto p-6">
+                                                            <div class="flex">
+                                                                <div class="w-1/5">
+                                                                    <img class="image-format-op" src="{{ asset('images/images/mag15x15s.jpeg') }}" alt="photo">
+                                                                </div>
+                                                                <div class="flex flex-col justify-between ml-4 flex-grow w-1/5">
+                                                                    <span class="font-bold text-sm">Magazine</span>
+                                                                    <span class="text-xs">Layout : Landscape</span>
+                                                                    <span class="text-xs">Quantity : 2</span>
+                                                                </div>
                                                             </div>
-                                                            <div class="flex flex-col justify-between ml-4 flex-grow w-1/5">
-                                                                <span class="font-bold text-sm">Magazine</span>
-                                                                <span class="text-xs">Layout : Landscape</span>
-                                                                <span class="text-xs">Quantity : 2</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="text-center font-regular text-sm w-1/5 mx-2 sm:mx-4">Rp 345.000</div>
-                                                        <div class="text-center font-regular text-sm w-1/5 mx-2 sm:mx-4">Rp 690.000</div>
-                                                        
-                                                </div>
-                                                -->
+                                                            <div class="text-center font-regular text-sm w-1/5 mx-2 sm:mx-4">Rp 345.000</div>
+                                                            <div class="text-center font-regular text-sm w-1/5 mx-2 sm:mx-4">Rp 690.000</div>
+                                                            
+                                                    </div>
+                                                    -->
 
 
             <div class="flex w-full items-center">
@@ -148,8 +150,7 @@
                 <p class="mt-6 font-semibold">Si Fulan binti Fulansyah</p>
             </div>
             <div class="w-1/3 my-auto m-8">
-                @if ($pesanan[0]->status == 0){}
-
+                @if ($pesanan[0]->status == 0)
                     <a href="{{ route('payconfirm', $pesanan[0]->id) }}">
                         <div class="flex items-center px-6 py-3">
                             <button
@@ -157,7 +158,15 @@
                                 Confirmation</button>
                         </div>
                     </a>
+                @elseif($pesanan[0]->status >= 2)
+                    <a href="{{ route('album', $pesanan[0]->id) }}">
+                        <div class="flex items-center px-6 py-3">
+                            <button
+                                class="bg-gray-500 font-semibold hover:bg-gray-600 py-3 text-sm w-full rounded-md text-white uppercase ">Create Album</button>
+                        </div>
+                    </a>
                 @endif
+
                 <a href="">
                     <div class="flex items-center px-6 py-3">
                         <button
