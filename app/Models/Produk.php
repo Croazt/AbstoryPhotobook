@@ -9,7 +9,7 @@ use App\Http\Controllers;
 class Produk extends Model
 {
     protected $table = 'products';
-    protected $fillable = ['kategori', 'nama', 'ukuran', 'harga', 'ket', 'in_currency', 'imageurl'];
+    protected $fillable = ['kategori', 'nama', 'layout', 'ukuran', 'harga', 'ket', 'in_currency', 'imageurl'];
 
     public function getFoto()
     {
